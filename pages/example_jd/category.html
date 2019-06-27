@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+<title>分类</title>
+<!-- 固定引入 -->
+<script type="text/javascript" src="../../js/h52appcontext.js"></script>
+<link rel="stylesheet" href="./css/common.css"/>
+</head>
+<body> 
+<div class="flex-column main" >
+	<div class="safeAreaInsets-top navigation-bar-view headerpanel" id="headerpanel">
+		<div class="left-item"><button bindtap="" class="nav-text"> </button></div>
+		<div class="bar-title"><label class="nav-text">分类</label></div>
+		<div class="right-item"><button class="nav-text"> </button></div>
+	</div>
+	<div class="scroll-view scrollpanel" id="scrollViewMain" 
+															bindpulldownrefresh="onpulldownrefresh" 
+															bindscrolltoupper="onscrolltoupper"
+															bindscrolltolower="onscrolltolower"
+															bindscreenpagechange="onscreenpagechange"
+															>
+		<div class="scroll-content-wrap"> 
+			<div style="min-height:500px;background-color:#f2f2f2;">
+				<div class="flex-column postinfo">
+					<div class="flex-row phead">
+						<img class="headimg" src="https://tvax3.sinaimg.cn/crop.0.0.400.400.180/7049c17bly8fhew33srwfj20b40b4wej.jpg">
+						<div class="flex-column pheadfont">
+							<label class="nickname">NBA</label>
+							<label class="time">14分钟前</label>
+						</div>
+					</div>
+					<label class="pcontent">【最有价值球员：字母哥】雄鹿球员扬尼斯-安特托昆博荣膺年度最有价值球员！字母哥本赛季场均得到27.7分12.5篮板5.9助攻，带领雄鹿取得常规赛联盟第一！获奖后的字母哥喜极而泣，感谢了队友、家人、教练... 字母兄弟们在台下也为他流下眼泪</label>
+					<div class="flex-row pmedia">
+						<img class="img" src="https://wx2.sinaimg.cn/large/7049c17bly1g4d8uicjgaj20ru0fojt6.jpg" >
+					</div>
+				</div>
+				<div class="flex-column postinfo">
+					<div class="flex-row phead">
+						<img class="headimg" src="https://tvax4.sinaimg.cn/crop.0.0.1080.1080.180/677e4af2ly8fydf2dis00j20u00u0wgd.jpg">
+						<div class="flex-column pheadfont">
+							<label class="nickname">新浪NBA</label>
+							<label class="time">15分钟前</label>
+						</div>
+					</div>
+					<label class="pcontent">本赛季各大奖项得主一览：
+
+						MVP：字母哥  最佳新秀：东契奇  进步最快球员：西亚卡姆  
+
+						最佳第六人：路威  最佳防守球员：戈贝尔  最佳教练：布登霍尔泽
+
+						最佳高光时刻：罗斯50分 终生成就奖：魔术师&伯德  最佳队友：康利 
+
+						#2019NBA颁奖典礼# #字母哥MVP#</label>
+					<div class="flex-row pmedia">
+						<img bindtap="perimg" data-index="0" src="https://wx3.sinaimg.cn/orj360/677e4af2ly1g4d8q1mhxzj20xc0ir0xh.jpg" class="img2">
+						<img bindtap="perimg" data-index="1" src="https://wx1.sinaimg.cn/orj360/677e4af2ly1g4d8q1ixdpj20xc0ir78n.jpg" class="img2">
+						<img bindtap="perimg" data-index="2" src="https://wx3.sinaimg.cn/orj360/677e4af2ly1g4d8q1k0qgj20xc0irn1e.jpg" class="img2">
+						<img bindtap="perimg" data-index="3" src="https://wx3.sinaimg.cn/orj360/677e4af2ly1g4d8q1js8fj20xc0ir78w.jpg" class="img2">
+						<img bindtap="perimg" data-index="4" src="https://wx1.sinaimg.cn/orj360/677e4af2ly1g4d8q1o5u7j20xc0irn16.jpg" class="img2">
+						<img bindtap="perimg" data-index="5" src="https://wx3.sinaimg.cn/orj360/677e4af2ly1g4d8q1n7epj20xc0iraec.jpg" class="img2">
+						<img bindtap="perimg" data-index="6" src="https://wx1.sinaimg.cn/orj360/677e4af2ly1g4d8sbjdj6j20xc0irgqq.jpg" class="img2">
+						<img bindtap="perimg" data-index="7" src="https://wx2.sinaimg.cn/orj360/677e4af2ly1g4d8q1k9qrj20xc0iraf3.jpg" class="img2">
+						<img bindtap="perimg" data-index="8" src="https://wx2.sinaimg.cn/orj360/677e4af2ly1g4d8q1jsm0j20xc0ir0x3.jpg" class="img2">
+					</div>
+				</div>
+			</div>
+			<div style="height:500px;background-color:#ffffff;">
+				 <label >list1</label>
+			</div>
+			<div style="height:500px;background-color:#fafade;">
+				 <label >list2</label>
+			</div>
+			<div style="height:500px;background-color:#ffffff;">
+				 <label >list3</label>
+			</div>
+			<div style="height:500px;background-color:#fafade;">
+				 <label >list4</label>
+			</div>
+			<div style="height:500px;background-color:#ffffff;">
+				 <label >list5</label>
+			</div>
+			<div style="height:500px;background-color:#fafade;">
+				 <label >list6</label>
+			</div>
+			<div style="height:500px;background-color:#ffffff;">
+				 <label >list7</label>
+			</div>
+			<div style="height:500px;background-color:#fafade;">
+				 <label >list8</label>
+			</div>
+		</div>
+	</div>
+	 
+	<div class="safeAreaInsets-bottom tabbar-view footerpanel" >
+		<div class="tabbar-item" item-page="./home.html"><img class="tabbarimg" src="./images/tabitems/home.png"></div>
+		<div class="tabbar-item tabbar-item-active" item-page="./category.html"><img class="tabbarimg" src="./images/tabitems/fenlei_active.png"></div>
+		<div class="tabbar-item" item-page="./jrbh.html"><img class="tabbarimg" src="./images/tabitems/jrbp.png"></div>
+		<div class="tabbar-item" item-page="./cart.html"><img class="tabbarimg" src="./images/tabitems/gwc.png"></div>
+		<div class="tabbar-item" item-page="./myjd.html"><img class="tabbarimg" src="./images/tabitems/login.png"></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+<title>表单Input</title>
+<!-- 固定引入 -->
+<script type="text/javascript" src="../../js/h52appcontext.js"></script>
+
+<link rel="stylesheet" href="./css/common.css"/>
+
+</head>
+<body> 
+<div class="flex-column main" id="maindiv">
+	<div class="safeAreaInsets-top navigation-bar-view headerpanel">
+		<div class="left-item"><button bindtap="goback" class="nav-text">返回</button></div>
+		<div class="bar-title"><label class="nav-text">表单Input</label></div>
+		<div class="right-item"><button class="nav-text"> </button></div>
+	</div>
+	 
+	<div class="scroll-view scrollpanel" style="background-color:#f8f8f8;">
+		<div class="scroll-content-wrap"> 
+		   <div class="page_hd">
+		        <label class="page_title">Input</label>
+		        <label class="page_desc">表单输入</label>
+		   </div>
+
+		   <div class="cells_title"><label class="cells_titlelabel">表单</label></div>
+		   <div class="flex-row row">
+                <label class="cell_label">昵称</label>
+                <input class="input_text" type="text" placeholder="请输入昵称">
+           </div>
+		   <div class="flex-row row">
+                <label class="cell_label">QQ</label>
+                <input class="input_text" type="number" pattern="[0-9]*" placeholder="请输入qq号">
+       </div>
+       <div class="flex-row row">
+            <label class="cell_label">手机号码</label>
+            <input class="input_text" type="tel" pattern="[0-9]*" placeholder="请输入手机号码">
+       </div>
+		   <div class="flex-row row">
+            <label class="cell_label">验证码</label>
+            <input class="input_text" type="number" placeholder="请输入验证码">
+       </div>
+       <div class="flex-row row">
+            <label class="cell_label">密码</label>
+            <input class="input_text" type="password" placeholder="请输入密码">
+       </div>
+       <div class="flex-row row">
+            <label class="cell_label">日期</label>
+            <input class="input_text" type="date" value="1981-09-13" placeholder="请选择日期">
+       </div>
+       <div class="flex-row row">
+            <label class="cell_label">时间</label>
+            <input class="input_text" type="datetime-local" placeholder="请选择时间">
+       </div>
+       <div class="cells_title"><label class="cells_titlelabel">开关</label></div>
+       <div class="flex-row rowswitch">
+            <label class="cell_longlabel">新消息通知</label>
+            <input class="input-switch"  id="newmsgnodify" type="checkbox" bindchange="newmsgonchang">
+       </div>
+       <div class="flex-row rowswitch">
+            <label class="cell_longlabel">语音和视频通话提醒</label>
+            <input class="input-switch" id="voicenodify" type="checkbox" checked >
+       </div>
+       <div class="cells_title"><label class="cells_titlelabel">文本域</label></div>
+       <div class="flex-row row">
+        <textarea class="textarea" placeholder="请输入文本">啊啊职
+          炮丰来一发。</textarea>
+       </div>
+
+       <div class="flex-row row" style="align-items:center;height:46px;padding:0px 15px 0px 15px;">
+       		<input type="checkbox" bindchange="agreeonchang" checked id="txcheckbox" style="width:16px;height:16px;">
+       		<label for="txcheckbox"  style="line-height:22px;margin-left:6px;flex-grow:1;flex-shrink:1;flex-basis:0%;"> 阅读并同意《相关条款》</label>
+       </div> 
+       
+       <div class="flex-column row" >
+           <button class="button" style="margin:30px 0px 30px 0px">确定</button>
+       </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

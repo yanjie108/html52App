@@ -1,0 +1,80 @@
+.login-wrap{
+	padding:20px;
+}
+.input_container{
+	height:50px;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+    box-sizing: border-box;
+    align-items:center;
+}
+.acinput{
+	border: 0;
+    outline: 0;
+    background-color:#ffffff00;
+	width:100%;
+    height:100%;
+    color:#222222;
+    font-size:16px;
+}
+.findpwd{
+	width:96px;
+    height:23px;
+    color: #222222;
+    font-size:14px;
+    border-radius:2px;
+    text-align: center;
+    padding-left:16px;
+    border-left:1px solid #cccccc;
+}
+.loginbtn {
+	margin-top:20px;
+    width:100%;
+    height:50px;
+    background-color:#ff2000;
+    border-radius:25px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+.quicknav{
+	margin-top:20px;
+	width:100%;
+	align-items: center;
+    justify-content:space-between
+}
+.quicknavtxt{
+	color:#999999;
+    line-height:22px;
+    font-size:14px;
+}
+
+.logintype{
+    margin-top:60px;
+    align-items: center;
+}
+.quickloginline{
+    width:100%;
+    height:1px;
+    border-top: 1px solid #efefef;
+    margin-top:10px;
+}
+.quicklogintxt {
+    font-size:12px;
+    line-height:16px;
+    padding:0px 6px 0px 6px;
+    background-color: #ffffff;
+    color: #cccccc;
+    margin-top:-10px;
+    text-align: center;
+}
+.quicklogintypetxt{
+    width: 48px;
+    line-height:16px;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    margin-top:6px;
+}
+
+

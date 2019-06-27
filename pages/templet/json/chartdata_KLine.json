@@ -1,0 +1,74 @@
+{
+  "xAxis": [
+    {
+      "min":0,"labelcount":3,"splitLine":{"show":false}
+      ,"data":[{"seriesIndex":0,"dimensionkey":"label"}]
+    },
+    {
+      "min":0,"labelcount":3,"axisLabel":{"show":false},"splitLine":{"show":false}
+    }
+  ],
+  "yAxis": [
+    {
+      "min1":5.5,"labelcount":5,"data":[{"seriesIndex":0,"dimensionkey":"label"}]
+    },
+    {
+      "min":0,"labelcount":2,"axisLabel":{"show":true}
+    }
+  ],
+  "visualMap": [{
+            "seriesItemid": "volume",
+            "dimensionkey":"colorval",
+            "pieces": [
+              {
+                  "value": 1,
+                  "color":"#ff0000"
+              },{
+                  "value": -1,
+                  "color":"#00a000"
+              }
+            ]
+        }],
+  "series": [
+    {
+      "name": "K线图",
+      "type": "candlestick",
+      "barWidth":8,
+      "data":[]
+    },
+    {
+      "name": "MA5",
+      "type": "line",
+      "itemStyle":{
+        "color":"#f4cb15"
+      },
+      "data":[]
+    },
+    {
+      "name": "MA10",
+      "type": "line",
+      "itemStyle":{
+        "color":"#12BDD9"
+      },
+      "data":[]
+    },
+    {
+      "name": "MA20",
+      "type": "line",
+      "itemStyle":{
+        "color":"#EE2F72"
+      },
+      "data":[]
+    },
+    {
+      "itemid": "volume",
+      "name": "成交量",
+      "type": "bar",
+      "barWidth":8,
+      "label":{
+              "show":false
+            },
+      "data":[]
+    }
+  ]
+}

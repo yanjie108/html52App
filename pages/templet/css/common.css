@@ -1,0 +1,39 @@
+
+html{
+    font-size:16px;
+}
+@media screen and (min-width:1px) and (max-width:320px ) {
+    html{font-size: 12px;}
+}
+@media screen and (min-width:321px) and (max-width:374px ) {
+    html{font-size: 14px;}
+}
+@media screen and (min-width:375px) and (max-width:750px ){
+    html{font-size: 16px;}
+}
+@media only screen and (min-width:751px ) {
+    html{
+        font-size:30px;
+    }
+}
+.main{
+	width:100%;
+	height:100%;
+	background-color: #ffffff;
+}
+.headerpanel{
+    border-bottom:1px solid #e5e5e5;
+}
+.scrollpanel{
+	width:100%;
+	height:100%;
+	flex-grow:1;
+    flex-shrink:1;
+    flex-basis:0;
+}
+
+.footerpanel{
+    min-height:50px;
+	border-top:1px solid #9a8d8d26;
+}
+

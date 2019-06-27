@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+<title>首页</title>
+<!-- 固定引入../../js/h52appcontext.js -->
+<script type="text/javascript" src="../../js/h52appcontext.js"></script>
+
+<script type="text/javascript" src="./js/util.js"></script>
+<link rel="stylesheet" href="./css/common.css"/>
+</head>
+<body> 
+<div class="flex-column main">
+	<div class="scroll-view scrollpanel" lower-threshold="50" id="scrollViewMain" 
+			bindscrolltolower="onscrolltolower" 
+			bindscreenpagechange="onscreenpagechange">
+		<div class="scroll-content-wrap"> 
+			<div class="swiper_wrapper" id="swiperwrapper">
+				<div class="placeholder"></div>
+			</div>
+			<div class="flex-row flsPitpanel">
+				<img bindtap="openlink" class="opa1" src="https://m.360buyimg.com/mobilecms/s250x200_jfs/t1/25687/29/7254/95076/5c6a773bE55b0a185/d6f4a8b9af6342db.jpg!q70.jpg" >
+				<img bindtap="openlink" class="opa1" src="https://m.360buyimg.com/mobilecms/s250x200_jfs/t1/9024/36/14838/101962/5c6a7767E002f3c7e/abde18f8ff59503e.jpg!q70.jpg" >
+				<img bindtap="openlink" class="opa1" src="https://m.360buyimg.com/mobilecms/s250x200_jfs/t1/19674/15/7224/98759/5c6a778bE16555c0e/c86172e682fa7251.jpg!q70.jpg" >
+			</div>
+			<div class="flex-column quick_nav_box">
+				<div class="flex-row itembgpanel">
+					<div class="flex-column items" bindtap="openlink" data-url="https://pro.m.jd.com/mall/active/2hqsQcyM5bEUVSStkN3BwrBHqVLd/index.html">
+						<img class="itemimg"  src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t1/29256/16/1420/4265/5c120d2aE83ef9fd4/ca89a8718704215c.png">
+						<label class="itemtext">京东超市</label>
+					</div>
+					<div class="flex-column items" bindtap="openlink" data-url="https://www.baidu.com">
+						<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t26635/320/1832919204/11533/a2f9878a/5bee366dN1627d554.png">
+	                    <label class="itemtext">海囤全球</label>
+	                </div>
+                	<div class="flex-column items" bindtap="openlink" data-url="https://m.jd.com/">
+                    	<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t1/17169/3/4127/4611/5c2f35cfEd87b0dd5/65c0cdc1362635fc.png">
+                        <span class="itemtext">京东服饰</span>
+                    </div>
+                    <div class="flex-column items" bindtap="openlink">
+                    	<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t1/27962/13/1445/4620/5c120b24Edd8c34fe/43ea8051bc50d939.png">
+                        <span class="itemtext">京东生鲜</span>
+                    </div>
+                    <div class="flex-column items" bindtap="openlink">
+                    	<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t16990/157/2001547525/17770/a7b93378/5ae01befN2494769f.png">
+                        <span class="itemtext">京东到家</span>
+                    </div>
+                 </div>
+
+                 <div class="flex-row itembgpanel">
+                        <div class="flex-column items" bindtap="openlink">
+                    		<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t18454/342/2607665324/6406/273daced/5b03b74eN3541598d.png">
+                            <span class="itemtext">充值缴费</span>
+                        </div>
+                    	<div class="flex-column items" bindtap="openlink">
+                    		<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t22228/270/207441984/11564/88140ab7/5b03fae3N67f78fe3.png">
+                        	<span class="itemtext">9.9元拼</span>
+                    	</div>
+                    	<div class="flex-column items" bindtap="openlink">
+                    		<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t1/7068/29/8987/5605/5c120da2Ecae1cc3a/016033c7ef3e0c6c.png">
+                        	<span class="itemtext">领券</span>
+                    	</div>
+                    	<div class="flex-column items" bindtap="openlink">
+                    		<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t22120/183/200496447/5553/91ed22e0/5b03b7b8Ncea08c5b.png">
+                    		<span class="itemtext">省钱</span>
+                    	</div>
+                    	<div class="flex-column items" bindtap="openlink">
+                    		<img class="itemimg" src="http://m.360buyimg.com/mobilecms/s120x120_jfs/t21481/263/412160889/15938/4246b4f8/5b0cea29N8fb2865f.png">
+                        	<span class="itemtext">全部</span>
+                		</div> 
+                  </div>      
+			</div>
+			<div class="flex-row scroll_news">
+				<img class="jdnewsimg" src="./images/jdkb.jpg">
+				<div class="flex-column news_mainwrapper">
+					<div class="flex-column news_listwrapper" id="newswrapper" ></div>
+				</div>
+			</div>
+			<div class="flex-column imgbanner" id="imgbanner">
+				<div class="placeholder"></div>
+			</div>
+ 
+			<div class="flex-column sec_kill_floor">
+				<div class="flex-row title_wrap">
+					<div class="flex-row title_wrapleft">
+					<label class="seckill_tit_txt">京东秒杀</label>
+					<label class="seckill_nth">16点场</label>
+					<label class="seckill_timer" id="seckill_time">00:00:00</label>
+					</div>
+					<div class="flex-row title_wrapright">
+						<label class="seckill_more">更多秒杀</label>
+						<img style="width:11px;height:11px;margin-right:6px" src="./images/arrow_rt.png">
+					</div>
+				</div>
+				<div class="scroll-horz-view" style="width:100%">
+					<div class="horzscroll-content-wrap seckill_new_list" id="seckillnewlist">
+						<div class="flex-column seckill_new_item" id="yj111">
+							<img class="seckill_photo"  id="test111" src="http://img14.360buyimg.com/n1/s150x150_jfs/t1/16951/12/6851/203781/5c63879bE7abb993c/5aba10592ee636fa.jpg">
+							<div class="flex-column seckill_price">
+                                <div class="flex-row seckill_newprice">
+                                	<span class="newunittxt">a¥</span>
+                                	<span class="newpricetxt">78</span>
+                                </div>
+                                <div class="flex-column seckill_originalprice">
+                                	<span class="originalpricetxt">¥228</span>
+                                	<div class="deleteline"></div>
+                                </div>
+                            </div>
+						</div>
+						<div class="flex-column seckill_new_item" id="ok1">
+							<img class="seckill_photo"  id="test222" src="http://img14.360buyimg.com/n1/s150x150_jfs/t1/16951/12/6851/203781/5c63879bE7abb993c/5aba10592ee636fa.jpg">
+							<div class="flex-column seckill_price">
+                                <div class="flex-row seckill_newprice">
+                                	<span class="newunittxt">b¥</span>
+                                	<span class="newpricetxt">78</span>
+                                </div>
+                                <div class="flex-column seckill_originalprice">
+                                	<span class="originalpricetxt">¥228</span>
+                                	<div class="deleteline"></div>
+                                </div>
+                            </div>
+						</div>
+						<div class="flex-column seckill_new_item" id="sp1">
+							<img class="seckill_photo"  id="test333" src="http://img14.360buyimg.com/n1/s150x150_jfs/t1/16951/12/6851/203781/5c63879bE7abb993c/5aba10592ee636fa.jpg">
+							<div class="flex-column seckill_price">
+                                <div class="flex-row seckill_newprice">
+                                	<span class="newunittxt">c¥</span>
+                                	<span class="newpricetxt">78</span>
+                                </div>
+                                <div class="flex-column seckill_originalprice">
+                                	<span class="originalpricetxt">¥228</span>
+                                	<div class="deleteline"></div>
+                                </div>
+                            </div>
+						</div>
+						<div class="flex-column seckill_new_item"><label class="txt2">2</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt1">3</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt2">4</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt1">5</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt2">6</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt1">7</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt2">8</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt1">9</label></div>
+						<div class="flex-column seckill_new_item"><label class="txt2">10</label></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-column recpanel" id="recFloor">
+				<div class="flex-row rectitle">
+					<div class="flex-column rectitle1"><div class="recline"></div></div>
+					<div class="flex-row rectitle2">
+						<img src="./images/rejt.png" style="width:13px;height:13px;margin-right:6px;">
+						<span class="graytext">为您推荐</span>
+					</div>
+					<div class="flex-column rectitle3"><div class="recline"></div></div>
+	            </div>
+	            <div class="flex-row recgoodslist" id="recgoodslist"></div>
+	            <div id="recloading" class="flex-row rec_loading">
+					<img class="loading-icon" style="width:16px;height:16px;margin-right:6px" src="../images/loading.gif">
+					<label class="loading-text" style="line-height:16px;margin:0px;color:#000000;font-size:12px">正在加载...</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="safeAreaInsets-bottom tabbar-view footerpanel" >
+		<div class="tabbar-item tabbar-item-active" item-page="./home.html"><img class="tabbarimg" src="./images/tabitems/home_active.png"></div>
+		<div class="tabbar-item" item-page="./category.html"><img class="tabbarimg" src="./images/tabitems/fenlei.png"></div>
+		<div class="tabbar-item" item-page="./jrbh.html"><img class="tabbarimg" src="./images/tabitems/jrbp.png"></div>
+		<div class="tabbar-item" item-page="./cart.html"><img class="tabbarimg" src="./images/tabitems/gwc.png"></div>
+		<div class="tabbar-item" item-page="./myjd.html"><img class="tabbarimg" src="./images/tabitems/login.png"></div>
+	</div>
+</div>
+</body>
+</html>

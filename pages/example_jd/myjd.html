@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+<title>我的京东</title>
+<!-- 固定引入../../js/h52appcontext.js -->
+<script type="text/javascript" src="../../js/h52appcontext.js"></script>
+
+<link rel="stylesheet" href="./css/common.css"/>
+<script type="text/javascript" src="./js/util.js"></script>
+</head>
+<body> 
+<div class="flex-column main">
+	<div class="safeAreaInsets-top navigation-bar-view headerpanel" id="headerpanel">
+		<div class="left-item"><button bindtap="" class="nav-text"> </button></div>
+		<div class="bar-title"><label class="nav-text">我的京东</label></div>
+		<div class="right-item"><button class="nav-text"> </button></div>
+	</div>
+	<div class="scroll-view scrollpanel" id="scrollViewMain">
+		<div class="scroll-content-wrap"> 
+			<div class="flex-column header_con">
+				<div class="flex-column my_header">
+					<div class="flex-row userinfo" id="userinfo">
+						<img src="./images/defaulttx.png" class="headimg">
+						<label class="logintxt" bindtap="gotologin" data-bindevt="tap">登录/注册</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-row order_group">
+				<div class="flex-column order_entrance">
+					<img class="entrance_img" src="./images/order_dfk.png">
+					<label class="entrance_text">待付款</label>
+				</div>
+				<div class="flex-column order_entrance">
+					<img class="entrance_img" src="./images/order_dsh.png">
+					<label class="entrance_text">待收货</label>
+				</div>
+				<div class="flex-column order_entrance">
+					<img class="entrance_img" src="./images/order_thsh.png">
+					<label class="entrance_text">退换／售后</label>
+				</div>
+				<div class="flex-row order_entranceend">
+					<img src="./images/myjd_jt.png" style="width:10px;height:100%">
+					<div class="flex-column order_entrance">
+						<img class="entrance_img" src="./images/order_all.png">
+						<label class="entrance_text">全部订单</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="flex-row assets_group">
+				<div class="flex-column assets_item">
+					<label class="assets_item_val">0张</label>
+					<label class="assets_item_key">京东券</label>
+				</div>
+				<div class="flex-column assets_item">
+					<label class="assets_item_val">0张</label>
+					<label class="assets_item_key">白条</label>
+				</div>
+				<div class="flex-column assets_item">
+					<label class="assets_item_val">0个</label>
+					<label class="assets_item_key">京豆</label>
+				</div>
+				<div class="flex-column assets_item">
+					<label class="assets_item_val">0张</label>
+					<label class="assets_item_key">礼品卡</label>
+				</div>
+				<div class="flex-row assets_itemend">
+					<img src="./images/myjd_jt.png" style="width:10px;height:100%">
+					<div class="flex-column assets_item">
+						<img class="assets_img" src="./images/myjd_assets.png">
+						<label class="assets_item_key">我的资产</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-row assets_group">
+				<div class="flex-column assets_item">
+					<label class="store_val">0</label>
+					<label class="assets_item_key">商品收藏</label>
+				</div>
+				<div class="flex-column assets_item">
+					<label class="store_val">0</label>
+					<label class="assets_item_key">店铺收藏</label>
+				</div>
+				<div class="flex-column assets_item">
+					<label class="store_val">1</label>
+					<label class="assets_item_key">我的足迹</label>
+				</div>
+			</div>
+
+			<div class="flex-row tools_group">
+				<div class="flex-column tools_item">
+					<img class="tools_img" src="./images/myjd_wdyy.png">
+					<label class="tools_text">我的预约</label>
+				</div>
+				<div class="flex-column tools_item">
+					<img class="tools_img" src="./images/myjd_hcp.png">
+					<label class="tools_text">京东火车票</label>
+				</div>
+				<div class="flex-column tools_item">
+					<img class="tools_img" src="./images/myjd_apptj.png">
+					<label class="tools_text">应用推荐</label>
+				</div>
+				<div class="flex-column tools_item">
+					<img class="tools_img" src="./images/myjd_yyt.png">
+					<label class="tools_text">通信营业厅</label>
+				</div>
+				<div class="flex-column tools_item">
+					<img class="tools_img" src="./images/myjd_fl.png">
+					<label class="tools_text">用户福利</label>
+				</div>
+				<div class="flex-column tools_item">
+					<img class="tools_img" src="./images/myjd_jp.png">
+					<label class="tools_text">京东机票</label>
+				</div>
+				<div class="flex-column tools_item">
+					<img class="tools_img" src="./images/myjd_hotel.png">
+					<label class="tools_text">京东酒店</label>
+				</div>
+			</div>
+
+			<div class="flex-column cdlist" id="cdlist">
+				<div class="flex-row topspace cdrow" bindtap="onwdtap" data-name="lxkf">
+					<div class="flex-row" style="align-items:center">
+						<img src="./images/grzxlxwm.png" class="cdimg2">
+						<label class="cdtxt1">联系客服</label>
+					</div>
+					<div class="flex-row" style="align-items:center">
+						<img src="./images/grzxleftjt.png" class="cdjt">
+					</div>
+				</div>
+				<div class="flex-row cdrow rowline" bindtap="onwdtap" data-name="gywm">
+					<div class="flex-row" style="align-items:center">
+						<img src="./images/grzxgywm.png" class="cdimg1">
+						<label class="cdtxt1">关于我们</label>
+					</div>
+					<div class="flex-row" style="align-items:center">
+						<img src="./images/grzxleftjt.png" class="cdjt">
+					</div>
+				</div>
+
+				<div class="flex-row cdloginrow" style="visibility:hidden;height:1px" bindtap="onwdtap" id="logoutcd" data-name="logout" >
+					<label class="cdtxt1">退出登录</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="safeAreaInsets-bottom tabbar-view footerpanel" >
+		<div class="tabbar-item" item-page="./home.html"><img class="tabbarimg" src="./images/tabitems/home.png"></div>
+		<div class="tabbar-item" item-page="./category.html"><img class="tabbarimg" src="./images/tabitems/fenlei.png"></div>
+		<div class="tabbar-item" item-page="./jrbh.html"><img class="tabbarimg" src="./images/tabitems/jrbp.png"></div>
+		<div class="tabbar-item" item-page="./cart.html"><img class="tabbarimg" src="./images/tabitems/gwc.png"></div>
+		<div class="tabbar-item tabbar-item-active" item-page="./myjd.html"><img class="tabbarimg" src="./images/tabitems/login_active.png"></div>
+	</div>
+</div>
+
+</body>
+</html>

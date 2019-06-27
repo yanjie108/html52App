@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+<title>登录</title>
+<!-- 固定引入../../js/h52appcontext.js -->
+<script type="text/javascript" src="../../js/h52appcontext.js"></script>
+
+<link rel="stylesheet" href="./css/common.css"/>
+<script type="text/javascript" src="./js/util.js"></script>
+</head>
+<body> 
+<div class="flex-column main" style="background-color:#FFFFFF">
+	<div class="safeAreaInsets-top navigation-bar-view headerpanel" id="headerpanel">
+		<div class="left-item" bindtap="closepage">
+			<img src="./images/back.png" style="margin:0px 0px 10px 20px;width:24px;height:24px">
+		</div>
+		<div class="bar-title"><label class="nav-text">登录</label></div>
+		<div class="right-item"><button class="nav-text"> </button></div>
+	</div>
+	<div class="scroll-view scrollpanel" id="scrollViewMain" bindscrolltoupper="">
+		<div class="scroll-content-wrap">
+			<div class="flex-column login-wrap"> 
+				<div class="flex-column input_container">
+	                <input id="username" class="acinput" type="text" value="" placeholder="用户名/邮箱/已验证手机">
+	            </div>
+	            <div class="flex-row input_container" style="margin-top:0px;">
+	                <input id="userpwd" class="acinput" type="password" value="" placeholder="请输入密码">
+	                <button class="findpwd">忘记密码</button>
+	            </div>
+
+	            <button id="loginbut" class="loginbtn" >登 录</button>
+
+	            <div class="flex-row quicknav">
+	            	<label class="quicknavtxt">短信验证码登录</label>
+	            	<label class="quicknavtxt">手机快速注册</label>
+	            </div>
+
+	            <div class="flex-column logintype">
+	            	<div class="quickloginline"></div>
+	            	<label class="quicklogintxt">其他登录方式</label>
+	            	<div class="flex-column" style="margin-top:20px">
+	            		<div class="flex-row">
+	            			<div class="flex-column" bindtap="quicklogin" data-type="weixin" style="padding:6px 10px 6px 10px">
+	            				<img src="./images/weixin.png" style="width:48px;height:48px;">
+	            				<label class="quicklogintypetxt">微信</label>
+	            			</div>
+	            			<div class="flex-column" bindtap="quicklogin" data-type="qq"  style="margin-left:40px;padding:6px 10px 6px 10px">
+	            				<img src="./images/qq.png" style="width:48px;height:48px;">
+	            				<label class="quicklogintypetxt">QQ</label>
+	            			</div>
+
+	            			
+	            		</div>
+	            	</div>
+	            </div>
+	        </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

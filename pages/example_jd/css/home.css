@@ -1,0 +1,377 @@
+.swiper_wrapper{
+	min-height:100px;
+	width:100%;
+	justify-content: center;
+    align-items: center;
+    background-color:#dedede;
+}
+/* placeholder 占位dom 实现等比例宽高 50%(2:1) 56.25%(16:9) 75%(4:3)*/
+.swiper_wrapper .placeholder{
+	margin-top:49%;
+	width:0px;
+	height:0px;
+	max-height:0px;
+}
+.slideimg{
+	width:100%;
+	height:100%;
+}
+
+
+.flsPitpanel{
+	margin:-16px 0px 0px 0px;
+    border-radius:10px 10px 0 0;
+    width: 100%;
+	height:6.875rem;
+	z-index: 1;
+	overflow:hidden;
+}
+.flsPitpanel .opa1{
+	height:6.875rem;
+	
+	flex-grow:1;
+    flex-shrink:1;
+    flex-basis:0%;
+}
+
+
+
+.quick_nav_box{
+	width:100%;
+	height:11.125rem;
+	background-image:url(../images/quicknavbg.jpg);
+	background-size:100% 100%;
+	overflow: hidden;
+}
+.itembgpanel{
+	width:100%;
+	height:50%;
+}
+.items{
+	width:20%;
+	height:100%;
+	justify-content: center;
+    align-items: center;
+}
+.itemimg{
+	width:2.75rem;
+	height:2.75rem;
+}
+.itemtext{
+	font-size:0.875rem;
+	color:#000000;
+	line-height:28px;
+}
+
+
+
+.scroll_news{
+	width:100%;
+	height:33px;
+	align-items:center;
+	overflow:hidden;
+}
+.jdnewsimg{
+	width:80px;
+	height:17px;
+	margin-left:8px;
+}
+.news_mainwrapper{
+	height:33px;
+	overflow:hidden;
+	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis:0%;
+}
+.news_listwrapper{
+	height:66px;
+	width:100%;
+}
+.news_list{
+	height:33px;
+	align-items:center;
+	width:100%;
+}
+.jdnewredfont{
+    color: #f23030;
+    font-size:13px;;
+    width:46px;
+    text-align:center;
+    line-height:18px;
+}
+.jdnewtitle{
+    color: #181818;
+    font-size:13px;;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height:18px;
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis:0%;
+}
+
+.animation-nextnews{
+	animation-name:actionnextnews;
+    animation-duration:0.3s;
+    animation-timing-function:linear;
+    animation-fill-mode:forwards;
+}
+@keyframes actionnextnews{
+	0%{transform:translateY(0px);}
+	100%{transform:translateY(-33px);}
+}
+
+.imgbanner{
+	min-height:100px;
+	width:100%;
+	justify-content: center;
+    align-items: center;
+}
+/* placeholder 占位dom 实现等比例宽高 50%(2:1) 56.25%(16:9) 75%(4:3)*/
+.imgbanner .placeholder{
+	margin-top:30%;
+	width:0px;
+	height:0px;
+	max-height:0px;
+}
+
+.sec_kill_floor{
+
+}
+.sec_kill_floor .title_wrap{
+	width:100%;
+	height:38px;
+	justify-content:space-between;
+}
+.title_wrap .title_wrapleft{
+	justify-content: center;
+    align-items: center;
+    padding:0px 2px 0px 6px;
+}
+.title_wrapleft .seckill_tit_txt{
+	color: #f02b2b;
+    font-weight:bold;
+    font-size:1rem;
+    text-align:center;
+    line-height:38px;
+}
+.title_wrapleft .seckill_nth{
+	font-size:12px;
+    color: #232326;
+    font-weight:bold;
+    line-height:38px;
+    width:42px;
+    margin-left:8px;
+}
+.title_wrapleft .seckill_timer{
+	color: #232326;
+    font-size:12px;
+    width:54px;
+    border:1px solid #dfdfdf;
+    line-height:17px;
+    text-align:center;
+}
+
+.title_wrap .title_wrapright{
+	justify-content: center;
+    align-items: center;
+}
+.title_wrapright .seckill_more{
+    color: #f23030;
+    font-size:0.75rem;
+    text-align:center;
+    line-height:38px;
+    width:54px;
+}
+.sec_kill_floor .seckill_new_list{
+	
+}
+.seckill_new_list .seckill_new_item{
+	width:5.563rem;
+	align-items:center;
+}
+.seckill_new_item .seckill_photo{
+	width:4.875rem;
+	height:4.875rem;
+}
+.seckill_new_item .seckill_price{
+	padding:0px 0px 24px 0px;
+}
+.seckill_price .seckill_newprice{
+	justify-content:center;
+}
+.seckill_newprice .newunittxt{
+	font-size:12px;
+    margin-top:10px;
+    color:#f23030;
+    line-height:18px;
+    height:18px;
+    text-align:center;
+    font-weight:bold;
+}
+.seckill_newprice .newpricetxt{
+	margin-top:10px;
+    color:#f23030;
+    font-size:1rem;
+    line-height:18px;
+    height:18px;
+    font-weight:bold;
+}
+.seckill_price .seckill_originalprice{
+	justify-content:center;
+}
+.seckill_originalprice .originalunittxt{
+	color: #686868;
+    font-size:12px;
+    line-height:14px;
+    height:14px;
+}
+.seckill_originalprice .originalpricetxt,.dellinetxt{
+	color: #686868;
+    font-size: 12px;
+    line-height:14px;
+    height:14px;
+    text-align:center;
+}
+.seckill_originalprice .deleteline{
+    margin:-7px 0px 7px 0px;
+    height:1px;
+    width:100%;
+    border-top:1px solid #686868;
+}
+
+.seckill_price .delline{
+	width:100%;
+    height:1px;
+    padding:0px 0px 0px 12px;
+    margin-top:-7px;
+    border-top:1px solid #686868;
+    overflow:hidden;
+}
+
+
+
+.seckill_new_item .txt1{
+	font-size:12px;
+	background-color:#FFFFFF;
+	width:100%;
+	line-height:20px;
+}
+.seckill_new_item .txt2{
+	font-size:12px;
+	width:100%;
+	line-height:20px;
+}
+
+
+.recpanel{
+	background-color:#f0f2f5;
+}
+
+.recpanel .rectitle{
+	align-items:center;
+	justify-content:center;
+	height:48px;
+}
+.rectitle .rectitle1{
+	align-items:center;
+	justify-content:center;
+	flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    height:100%;
+}
+.rectitle .rectitle2{
+	align-items:center;
+	justify-content:center;
+	width:90px;
+	height:100%;
+}
+.rectitle .rectitle3{
+	align-items:center;
+	justify-content:center;
+	flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    height:100%;
+}
+.rectitle2 .graytext{
+	color: #848689;
+    font-size: 14px;
+}
+.rectitle1 .recline,.rectitle3 .recline{
+	width:100%;
+    height:1px;
+    border-top:1px solid #cbcbcb;
+    overflow:hidden;
+}
+.recpanel .recgoodslist{
+	flex-wrap:wrap;
+}
+.recgoodslist .goodsitem{
+	width:50%;
+	min-height:120px;
+	box-sizing:border-box;
+}
+.recgoodslist .item1{
+	padding:2px 2px 2px 0px;
+}
+.recgoodslist .item2{
+	padding:2px 0px 2px 2px;
+}
+.goodsitem .goodspanel{
+	width:100%;
+	min-height:120px;
+	background-color:#FFFFFF;
+	padding-bottom:8px;
+	overflow:hidden;
+}
+.goodsdesc{
+    height:32px;
+    font-size:13px;
+    overflow: hidden;
+    word-break:break-all;
+    text-overflow: ellipsis;
+    color:#232326;
+    line-height:16px;
+    margin-top:-14px;
+    text-indent:3.8em;
+
+    /* 以下css原生忽略为了让h5显示正常而已 */
+
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.goodsprice{
+	color:#f23030;
+    padding:0px 5px 0 4px;
+    height: 25px;
+    line-height:25px;
+    font-size:0.938rem;
+    margin-left:5px;
+}
+
+
+.recpanel .rec_loading{
+	height:50px;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.test{
+	width:120px;
+	height:40px;
+	border:0px solid #ff0000;
+	margin:30px;
+	border-radius:12px 12px 0px 0px;
+	background-color:#3F51B5;
+}
+
+

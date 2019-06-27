@@ -1,0 +1,62 @@
+.cartmain{
+	background-color: #f2f2f2;
+}
+.snbanner{
+	width:100%;
+	height:9rem;
+	background-image:url(../images/bg1.jpeg);
+	background-size:100% 100%;
+}
+.snmoney{
+	width:100%;
+	height:5.125rem;
+	background-color:#FFFFFF;
+	margin-bottom:0.625rem;
+
+}
+.snorder1{
+	margin-top:10px;
+	width:100%;
+	height:8.25rem;
+	background-image:linear-gradient(to right,#eb3c3c,#ff7459);
+}
+.snorder2{
+	margin-top:10px;
+	width:100%;
+	height:8.25rem;
+	background-image:linear-gradient(to left,#eb3c3c,#ff7459);
+}
+.snorder3{
+	margin-top:10px;
+	width:100%;
+	height:8.25rem;
+	background-image:linear-gradient(to bottom,#eb3c3c,#ff7459);
+}
+.snorder4{
+	margin:10px 0px 10px 0px;
+	width:100%;
+	height:8.25rem;
+	background-image:linear-gradient(to top,#eb3c3c,#ff7459);
+}
+
+
+.homeicon{
+	background-image:url(../images/icons.png);
+    background-position:0px 0px;
+    background-size:300% 300%;
+    background-repeat: no-repeat;
+    width:20px;
+    height:20px;
+    margin:10px;
+    border:1px solid #000000;
+}
+.goodsicon{
+	background-image:url(../images/icons.png);
+    background-position:0px -20px;
+    background-size:300% 300%;
+    background-repeat: no-repeat;
+    width:20px;
+    height:20px;
+    margin:10px;
+    border:1px solid #000000;
+}

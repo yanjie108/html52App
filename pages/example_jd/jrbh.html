@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+<title>今日必火</title>
+<!-- 固定引入 -->
+<script type="text/javascript" src="../../js/h52appcontext.js"></script>
+
+<link rel="stylesheet" href="./css/common.css"/>
+</head>
+<body> 
+<div class="flex-column main" >
+	<div class="safeAreaInsets-top navigation-bar-view headerpanel" id="headerpanel">
+		<div class="bar-title"><label class="nav-text">今日必火</label></div>
+	</div>
+	<div class="scroll-view scrollpanel">
+		<div class="scroll-content-wrap"> 
+			<!--
+			模仿 https://weui.io/ 
+					一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。
+			-->
+			<div class="flex-column page__hd">
+				<label class="page__title">UI事例</label>
+				<label class="page__desc">
+					模仿 https://weui.io/ 一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。
+				</label>
+			</div>
+
+			<div class="flex-column page__bd">
+				<div class="flex-column">
+					<div class="flex-row item">
+	                    <label class="itemtxt">表单</label>
+	                    <img class="itemimg" src="./images/icon_nav_form.png">
+	                </div>
+	                <div class="flex-column itemchildpanel">
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="button">
+		                    <label class="itemchildtxt">Button</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="input">
+		                    <label class="itemchildtxt">Input</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		                <div class="flex-row itemchildend" bindtap="opendemo" data-type="uploader">
+		                    <label class="itemchildtxt">Uploader</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		            </div>
+	            </div>
+
+	            <div class="flex-column" style="margin-top:10px;">
+					<div class="flex-row item">
+	                    <label class="itemtxt">操作反馈</label>
+	                    <img class="itemimg" src="./images/icon_nav_feedback.png">
+	                </div>
+	                <div class="flex-column itemchildpanel">
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="actionsheet">
+		                    <label class="itemchildtxt">Actionsheet</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="dialog">
+		                    <label class="itemchildtxt">Dialog</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		                <div class="flex-row itemchildend" bindtap="opendemo" data-type="toast">
+		                    <label class="itemchildtxt">Toast</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		            </div>
+	            </div>
+
+	            <div class="flex-column" style="margin-top:10px;">
+					<div class="flex-row item">
+	                    <label class="itemtxt">导航及其他</label>
+	                    <img class="itemimg" src="./images/icon_nav_nav.png">
+	                </div>
+	                <div class="flex-column itemchildpanel">
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="navbar">
+		                    <label class="itemchildtxt">Navbar</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		            </div>
+		            <div class="flex-column itemchildpanel">
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="devicesysinfo">
+		                    <label class="itemchildtxt">设备、系统信息</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		            </div>
+		            <div class="flex-column itemchildpanel">
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="datacipher">
+		                    <label class="itemchildtxt">信息加密</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		            </div>
+		            <div class="flex-column itemchildpanel">
+		                <div class="flex-row itemchild" bindtap="opendemo" data-type="localstorage">
+		                    <label class="itemchildtxt">本地数据存储</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		            </div>
+		            <div class="flex-column itemchildpanel">
+		                <div class="flex-row itemchildend" bindtap="opendemo" data-type="webview">
+		                    <label class="itemchildtxt">WebView</label>
+		                    <img src="./images/grzxleftjt.png" class="cdjt">
+		                </div>
+		            </div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	 
+	<div class="safeAreaInsets-bottom tabbar-view footerpanel" >
+		<div class="tabbar-item" item-page="./home.html">
+			<img class="tabbarimg" src="./images/tabitems/home.png">
+		</div>
+		<div class="tabbar-item" item-page="./category.html">
+			<img class="tabbarimg"  src="./images/tabitems/fenlei.png">
+		</div>
+		<div class="tabbar-item tabbar-item-active" item-page="./jrbh.html">
+			<img class="tabbarimg redbg" src="./images/tabitems/jrbp.png">
+		</div>
+		<div class="tabbar-item" item-page="./cart.html">
+			<img class="tabbarimg" id="cart" src="./images/tabitems/gwc.png">
+		</div>
+		<div class="tabbar-item" item-page="./myjd.html">
+			<img class="tabbarimg" id="myjd" src="./images/tabitems/login.png">
+		</div>
+	</div>
+</div>
+</body>
+</html>

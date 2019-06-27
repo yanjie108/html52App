@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+<title>设备、系统信息</title>
+<!-- 固定引入../../js/h52appcontext.js -->
+<script type="text/javascript" src="../../js/h52appcontext.js"></script>
+
+<link rel="stylesheet" href="./css/common.css"/>
+
+</head>
+<body> 
+<div class="flex-column main">
+	<div class="safeAreaInsets-top navigation-bar-view headerpanel" id="headerpanel">
+		<div class="left-item"><button bindtap="goback" class="nav-text">返回</button></div>
+		<div class="bar-title"><label class="nav-text">设备、系统信息</label></div>
+		<div class="right-item"></div>
+	</div>
+	<div class="scroll-view scrollpanel" id="scrollViewMain">
+		<div class="scroll-content-wrap"> 
+			<div class="flex-column page__hd">
+				<label class="page__title">Device、System Info</label>
+				<label class="page__desc">设备、系统信息;获取设备型号，系统版本，网络状态。</label>
+			</div>
+
+			<div class="flex-column page__result" id="resultpanel">
+				 
+			</div>
+
+			<div class="flex-column page__bd">
+				<button class="btn btn_default" id="devicebut">获取设备信息</button>
+				<button class="btn btn_default" id="systembut">获取系统信息</button>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

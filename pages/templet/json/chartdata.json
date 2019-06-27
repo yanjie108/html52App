@@ -1,0 +1,81 @@
+{
+  "xAxis": [
+    {
+      "min":0,"max":240,"labelcount":3
+      ,"data1":[{"seriesIndex":0,"dimensionkey":"label"}]
+      ,"data":[{"label":"09:30"},{"label":"11:30/13:00"},{"label":"15:00"}]
+    },
+    {
+      "min":0,"max":240,"labelcount":3,"axisLabel":{"show":false}
+    }
+  ],
+  "yAxis": [
+    {
+      "min":28,"max":35,"labelcount":3
+      ,"data1":[{"seriesIndex":0}],"splitLine":{"show":false}
+    },
+    {
+      "min":0,"labelcount":2,"axisLabel":{"show":true}
+    }
+  ],
+  "visualMap": [{
+            "seriesItemid": "volume",
+            "dimensionkey":"colorval",
+            "pieces": [
+              {
+                  "value": 1,
+                  "color":"#ec0000"
+              },{
+                  "value": -1,
+                  "color":"#00da3c"
+              }
+            ]
+        }],
+  "series": [
+    {
+      "name": "分时图",
+      "type": "line",
+      "itemStyle":{
+        "color":"#59abe3"
+      },
+      "areaStyle":{
+        "color":"#d4e9f8"
+      },
+      "data":[],
+      "markLine":{
+          "lineStyle":{
+              "type":"dashed",
+              "color":"#cccccc"
+          },
+          "data":[
+              {
+                "name":"最高价",
+                "yAxis":35,
+                "lineStyle":{
+                  "type":"solid","color":"#000000"
+                },
+                "label":{
+                  "show":false
+                }
+              },
+              {
+                "name":"Y轴值为31.5的水平线",
+                "yAxis":31.5,
+                "label":{
+                  "show":false
+                }
+              }
+          ]
+      }
+    },
+    {
+      "itemid": "volume",
+      "name": "成交量",
+      "type": "bar",
+      "label":{
+              "show":false
+            },
+      "data":[]
+    }
+  ]
+}

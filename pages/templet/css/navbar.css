@@ -1,0 +1,81 @@
+.page__hd{
+	padding: 2.5rem;
+}
+.page__title{
+	text-align: left;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.page__desc{
+	margin-top: 5px;
+    color: #888888;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    word-break: break-all;
+}
+
+.page__bd{
+    
+}
+
+.btn {
+    margin-top:15px;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    width:50%;
+    height:2.875rem;
+    text-align:center;
+    border: 1px solid #00000033;
+}
+.btn_default {
+    color: #000000;
+    background-color: #F8F8F8;
+}
+
+.detail_nav_bar{
+    background: #ffffff;
+    width: 100%;
+    height:38px;
+    overflow: hidden;
+    border-bottom: 1px solid #dddddd;
+}
+.itemtxt{
+    border-bottom: 2px solid #ffffff;
+    color:#333333;
+    height:36px;
+    font-size:14px;
+    line-height:36px;
+    text-align: center;
+}
+.tabbar-item-active .activeline{
+    border-bottom: 2px solid #ff6600;
+    color:#ff6600;
+}
+.detail_navpanel{
+    width:400%;
+    overflow:unset;
+    transform:translateX(0);
+    background-color:#fafafa;
+    min-height:200px;
+}
+.detail_nav_content{
+    width: 100%;
+    flex-shrink:1;
+    align-items: center;
+}
+.detail_singlenavpanel{
+    width:100%;
+    background-color:#fafafa;
+    min-height:100px;
+}
+
+.txt1{
+    width:65%;
+    height:24px;
+    line-height:24px;
+    color:#000000;
+    margin:10px;
+    white-space:nowrap;
+    font-size:16px;
+}

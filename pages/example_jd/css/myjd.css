@@ -1,0 +1,252 @@
+.header_con {
+    padding:10px;
+    background-color:#ffffff;
+}
+.header_con .my_header{
+	border-radius: 6px;
+    background-color1:#eb3c3c;
+    background-image:linear-gradient(to right,#eb3c3c,#ff7459);
+    overflow:hidden;
+}
+.my_header .userinfo{
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+}
+.headimg{
+	width:60px;
+	height:60px;
+	margin:0px 8px 0px 12px;
+}
+.logintxt{
+	color:#ffffff;
+    line-height:22px;
+    font-size:16px;
+}
+.nickname{
+	min-width:80px;
+	line-height:24px;
+	color:#ffffff;
+    font-size:14px;
+}
+.real_name_item{
+    border-radius:15px;
+    color:#ffffffb3;
+    background-color:#c8483f;
+    width:80px;
+    height:20px;
+    line-height:20px;
+    font-size:12px;
+    text-align:center;
+
+}
+.ur{
+	width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.account_wrap_content{
+	justify-content: center;
+	align-items: center;
+    width: 75px;
+    height: 44px;
+    margin-right:15px;
+}
+.settingtxt{
+	margin-left:4px;
+	color: #4c0000b3;
+    font-size: 12px;
+}
+.plus_account{
+	background-color:#333333;
+	width:114px;
+	height:50px;
+	transform: rotate(11deg);
+	margin:0px -2px -9px 0px;
+}
+.plusimg{
+	width:50px;
+	height:10px;
+	margin:4px 0px 0px 8px;
+}
+
+.plus_account_text{
+	width:88px;
+	height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #cead68;
+    border-radius:14px;
+    background-color:#d9d9d91a;
+    margin:6px 0px 0px 8px;
+    text-align:center;
+}
+
+.order_group{
+	margin:15px 0px 0px 0px;
+	height:72px;
+	background-color:#ffffff;
+	box-sizing:border-box;
+}
+.order_entrance,.order_entranceend{
+	flex-grow: 1;
+	flex-shrink: 1;
+    flex-basis: 0%;
+	align-items:center;
+    justify-content:space-around;
+    height:100%;
+}
+.order_entrance .entrance_img{
+	margin-top:10px;
+	width:20px;
+	height:20px;
+}
+.order_entrance .entrance_text{
+    color: #666666;
+    font-size:12px;
+    line-height:22px;
+    text-align:center;
+}
+
+
+
+.assets_group{
+	margin:15px 0px 0px 0px;
+	height:72px;
+	background-color:#ffffff;
+	box-sizing:border-box;
+}
+.assets_item,.assets_itemend{
+	flex-grow: 1;
+	flex-shrink: 1;
+    flex-basis: 0%;
+	align-items:center;
+    justify-content:space-around;
+    height:100%;
+}
+.assets_item .assets_img{
+	margin-top:10px;
+	width:20px;
+	height:20px;
+}
+.assets_item .assets_item_val {
+	margin-top:10px;
+	color: #e93b3d;
+    font-size: 14px;
+    line-height:20px;
+    text-align:center;
+}
+.assets_item .assets_item_key{
+	margin-bottom:2px;
+    color: #666666;
+    font-size:12px;
+    line-height:22px;
+    text-align:center;
+}
+.assets_item .store_val {
+	margin-top:10px;
+    font-size: 16px;
+    font-weight:bold;
+    color: #333333;
+    line-height:22px;
+}
+
+
+.tools_group{
+	margin:15px 0px 0px 0px;
+	height:130px;
+	background-color:#ffffff;
+	box-sizing:border-box;
+	flex-wrap: wrap;
+}
+.tools_group .tools_item{
+	width:25%;
+	height:50%;
+	align-items:center;
+    justify-content:space-around;
+}
+.tools_item .tools_img{
+	margin-top:10px;
+	width:20px;
+	height:20px;
+}
+.tools_item .tools_text{
+    color: #666666;
+    font-size:12px;
+    line-height:22px;
+    text-align:center;
+}
+
+.cdlist{
+	background-color:#f5f5f5;
+	padding-bottom:10px;
+}
+
+.cdrow{
+	height:3.125rem;
+	background-color:#FFFFFF;
+	align-items:center;
+	justify-content:space-between;
+}
+.cdrow:active{
+	background-color:#6e6e6e0d;
+}
+.rowline{
+	border-top:1px solid #f0f0f0;
+	background-color:#FFFFFF;
+}
+.topspace{
+	margin-top: 15px;
+}
+.cdimg1{
+	margin:0px 1rem 0px 1rem;
+	width:1.375rem;
+	height:1.375rem;
+}
+.cdimg2{
+	margin:0px 1rem 0px 1rem;
+	width:1.274rem;
+	height:1.125rem;
+}
+ 
+.cdtxt1{
+	color:#333333;
+	line-height:26px;
+	font-size: 14px;
+}
+.cdtxt2{
+	color:#919191;
+	line-height:26px;
+	font-size:0.86rem;
+}
+.cdjt{
+	width:0.5rem;
+	height:0.875rem;
+	margin:0px 1.5rem 0px 0.65rem;
+}
+
+.cdloginrow{
+	margin-top:15px;
+	height:3.125rem;
+	background-color:#FFFFFF;
+	align-items:center;
+	justify-content:center;
+}
+.cdloginrow:active{
+	background-color:#6e6e6e0d;
+}
+
+.curtain_content{
+	align-items: flex-end;
+    height: 260px;
+    padding: 20px 20px 0px 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+

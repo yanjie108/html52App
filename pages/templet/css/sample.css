@@ -1,0 +1,42 @@
+
+.txt{
+	min-height:20px;
+	width:100%;
+}
+.logopanel{
+	min-height:249px;
+	background-color:#f0f2f5;
+}
+.listpanel{
+	height:300px;
+}
+.listpanel .row{
+	background-color:#ffffff;
+    height:64px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f0f0f0;
+    tap-highlight-color: #6e6e6e0d;
+}
+.listpanel .row:active{
+	background-color: #6e6e6e0d;
+}
+
+.itemtext{
+	line-height:20px;
+	font-size:14px;
+	color:#000000;
+}
+.tabbar-item-active .red{
+	color:#ff0000;
+}
+
+
+.kline{
+	height:180px;
+	background-color:#fafafa;
+}
+.volume{
+	height:68px;
+	background-color:#fafafa;
+}
