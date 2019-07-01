@@ -6,4 +6,4 @@ HTML52App 是一种基于HTML、JS(ES6)、CSS编写的运行于手机端的App�
 平台自动将html布局转换成原生ui布局，绝非是WebView实现，体验更新速度更快。
 
 
-详见 wiki
+详见 [wiki](https://github.com/yanjie108/html52App/wiki)
