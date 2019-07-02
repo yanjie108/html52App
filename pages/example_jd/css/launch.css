@@ -1,0 +1,31 @@
+.swipercontainer{
+	width:100%;
+	height:100%;
+}
+.slidepanel{
+	align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.textcontent{
+	width:60px;
+	height:60px;
+	background-color: #ff00ff;
+	text-align: center;
+	line-height: 60px
+}
+.imgcontent{
+	width:100%;
+	height:100%;
+}
+
+.btn_default{
+    color: #1aad19;
+    border: 1px solid #1aad19;
+    width: 60%;
+    height: 3rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.125rem;
+    text-align: center;
+}
