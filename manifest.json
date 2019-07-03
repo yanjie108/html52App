@@ -1,0 +1,48 @@
+{
+    "id": "sp.yj.h52app",
+    "name": "H52APP",
+    "version":"1.1.0",
+    "launch":{
+    	"page":"./example_jd/launch.html"
+    },
+     "welcome":{
+        "tabbar_selected_index":1,
+        "page":"./example_jd/category.html"
+    },
+    "welcome2":{
+    	"tabbar_selected_index":2,
+    	"page":"./example_jd/jrbh.html"
+    },
+    "icons":{
+        "desc":"应用图标提供1024X1024，系统自动各种适配大小",
+        "bigimg":"icon_1024x1024.png"
+    },
+    "splashscreen": {
+        "desc":"启动界面需要多种格式适配",
+        "iOS": {
+            "retina40": "launcher_iPhone5.png"        ,"retina40desc":"4.0英寸设备(iPhone5)启动图片640x1136",
+			"retina47": "launcher_iPhone8.png"        ,"retina47desc":"4.7英寸设备(iPhone6/7/8)启动图片750x1334",
+			"retina55": "launcher_iPhone8plus.png"    ,"retina55desc":"5.5英寸设备(iPhone6Plus/7Plus/8Plus)启动图片1242x2208",
+			"iphonex" : "launcher_iPhonex.png"        ,"iphonexdesc" :"5.8英寸设备(iPhoneX)启动图片1125x2436"
+        },
+        "android": {
+            "xhdpi"  : "launcher_x720x1242.png"     ,"xhdpidesc"  : "720高分屏幕启动图片720x1242",
+            "xxhdpi" : "launcher_xx1080x1882.png"   ,"xxhdpidesc" : "1080p高分屏启动图片1080x1882",
+            "xxxhdpi": ""                           ,"xxxhdpidesc": "安卓1080×1920启动图片"
+        }
+    },
+    "statusbar": {
+        "style": "dark"  ,"styledesc": "dark|light, 系统状态栏样式"  
+    },
+    "sdk":{
+        "wechat":{
+            "AppID":""
+        }
+    }
+    ,
+    "signing":{
+        "iOS":{},
+        "android":{}
+    }
+    ,"domains":["www.baidu.com","www.google.com","sp.yj.h52app"]
+}
