@@ -218,7 +218,8 @@ PageDefine(function(Page,$){
 			var row;
 			var setting;
 			if(getdatatype=="mogu"){
- 				var urlstr="https://list.mogu.com/search?_version=8253&sort=pop&page="+pi+"&q=裙子";
+				//3%3A4   3:4 
+ 				var urlstr="https://list.mogu.com/search?_version=8253&ratio=3%3A4&cKey=46&sort=pop&page="+pi+"&q=裙子";
 				setting={"url":urlstr};
 				setting["dataType"]="jsonp";
 				setting["data"]={};
@@ -239,8 +240,8 @@ PageDefine(function(Page,$){
 				if(getdatatype=="mogu"){
 					if(datas && datas.result && datas.result.wall){
 						var wallobj=datas.result.wall;
-						if(wallobj && wallobj.list){
-							var dataarry=wallobj.list;
+						if(wallobj && wallobj.docs){
+							var dataarry=wallobj.docs;
 							datalen=dataarry.length;
 							build_mogurechtml(dataarry);
 						}
@@ -273,14 +274,14 @@ PageDefine(function(Page,$){
 		var recgoodslistobj=$("#recgoodslist");
 		var frame=recgoodslistobj.getBoundingClientRect();
 		var w=parseInt(frame.width/2);
-		var h=parseInt(w*1.5);
+		var h=parseInt(w/0.75);
 		var datalen=data.length;
 		 
 		var html='';
 		for(var i=0;i<datalen;i++){
 			var one=data[i];
 			var img=one["img"];
-			var price=one["price"];
+			var price=one["price"]||one["orgPrice"]||"--.--";
 			var desc=one["title"];
 			var linkurl=one["link"];
 			//\u3000\u3000\u3000\u3000
@@ -289,9 +290,9 @@ PageDefine(function(Page,$){
 						+'<div class="goodspanel">'
 							+'<img class="recycler-img" style="width:'+w+'px;height:'+h+'px" src="'+img+'" >'
 							+'<div class="flex-row" style="margin:5px;width:'+(w-10)+'px;">'
-								+'<label class="goodsdesc" style="margin-top:0px;width:'+(w-10)+'px;text-indent:0em">字数过长就省略，'+desc+'</label>'
+								+'<label class="goodsdesc" style="margin-top:0px;width:'+(w-10)+'px;text-indent:0em">'+desc+'</label>'
 							+'</div>'
-							+'<label class="goodsprice">'+(price)+'</label>'
+							+'<label class="goodsprice">¥'+(price)+'</label>'
 						+'</div>'
 					+'</div>';
 			//if(i==1)break;
